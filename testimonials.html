@@ -85,36 +85,24 @@
 </header>
 <div class="header-placeholder"></div>
 
-<!--<section class="flexslider std-slider" data-height="300" data-direction="horizontal" data-animation="fade"-->
-         <!--data-loop="true" data-smooth="false" data-slideshow="true" data-speed="25000" data-animspeed="550"-->
-         <!--data-controls="false" data-dircontrols="true">-->
+<section class="flexslider std-slider" data-height="300" data-direction="horizontal" data-animation="fade"
+         data-loop="true" data-smooth="false" data-slideshow="true" data-speed="25000" data-animspeed="550"
+         data-controls="false" data-dircontrols="true">
     <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-md-push-6 col-xs-12">
-                <div class="center-block">
-                    <img src="assets/images/writing3.png" alt="" class="img-responsive">
+        <ul class="slides">
+            <li>
+                <div class="inner">
+                    <div class="object animated absolute" data-left="100px" data-bottom="0px" data-fx="bounceinleft">
+                        <img src="assets/images/pencils.png" alt="pencils">
+                    </div>
+                    <div class="object animated absolute" data-right="150px" data-fx="bounceindown">
+                        <img src="assets/images/demo-content/text1.png" alt="our 6th annual sunny art contest">
+                    </div>
+                    <div class="object animated absolute" data-right="140px" data-bottom="40px" data-fx="flipiny">
+                        <a href="#">просмотреть <i class="fa fa-chevron-right"></i> </a>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-6 col-md-pull-6 col-xs-12">
-                <div class="center-block">
-                    <img src="assets/images/pencils.png" alt="pencils" class="img-responsive">
-                </div>
-            </div>
-        </div>
-        <!--<ul class="slides">-->
-            <!--<li>-->
-                <!--<div class="inner">-->
-                    <!--<div class="object animated absolute" data-left="100px" data-bottom="0px" data-fx="bounceinleft">-->
-                        <!--<img src="assets/images/pencils.png" alt="pencils">-->
-                    <!--</div>-->
-                    <!--<div class="object animated absolute" data-right="0px" data-fx="bounceindown">-->
-                        <!--<img src="assets/images/writing3.png" alt="" class="slider-writing">-->
-                    <!--</div>-->
-                    <!--<div class="object animated absolute" data-right="140px" data-bottom="40px" data-fx="flipiny">-->
-                        <!--<a href="#">просмотреть <i class="fa fa-chevron-right"></i> </a>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</li>-->
+            </li>
             <!--<li>-->
             <!--<div class="inner">-->
             <!--<div class="object animated absolute" data-left="100px" data-bottom="-43px" data-fx="bounceinleft">-->
@@ -141,9 +129,9 @@
             <!--</div>-->
             <!--</div>-->
             <!--</li> -->
-        <!--</ul>-->
+        </ul>
     </div>
-<!--</section>-->
+</section>
 
 <div class="container">
     <div class="row">
@@ -376,7 +364,26 @@
                                         <!--<span class="text-muted">When will you visit club?</span>-->
                                     </label>
                                 </div>
-                                <div class="col-xs-5">
+                                <div class="col-xs-8">
+                                    <select name="entry.816113830_month" class="form-control"
+                                            id="entry.816113830_month" aria-label="Month"
+                                            aria-required="true">
+                                        <option value="">Month</option>
+                                        <option value="1">January</option>
+                                        <option value="2">February</option>
+                                        <option value="3">March</option>
+                                        <option value="4">April</option>
+                                        <option value="5">May</option>
+                                        <option value="6">June</option>
+                                        <option value="7">July</option>
+                                        <option value="8">August</option>
+                                        <option value="9">September</option>
+                                        <option value="10">October</option>
+                                        <option value="11">November</option>
+                                        <option value="12">December</option>
+                                    </select>
+                                </div>
+                                <div class="col-xs-4">
                                     <select name="entry.816113830_day" class="form-control"
                                             id="entry.816113830_day" aria-label="Day of month"
                                             aria-required="true">
@@ -414,32 +421,6 @@
                                         <option value="31">31</option>
                                     </select>
                                 </div>
-                                <div class="col-xs-7">
-                                    <select name="entry.816113830_month" class="form-control"
-                                            id="entry.816113830_month" aria-label="Month"
-                                            aria-required="true">
-                                        <!--<option value="">Month</option>-->
-                                        <option value="1">Январь</option>
-                                        <option value="2">Февраль</option>
-                                        <option value="3">Март</option>
-                                        <option value="4">Апрель</option>
-                                        <option value="5">Май</option>
-                                        <option value="6">Июнь</option>
-                                        <option value="7">Июль</option>
-                                        <option value="8">Август</option>
-                                        <option value="9">Сентябрь</option>
-                                        <option value="10">Октябрь</option>
-                                        <option value="11">Ноябрь</option>
-                                        <option value="12">Декабрь</option>
-                                    </select>
-                                    <script>
-                                        var monthSelect = document.getElementById('entry.816113830_month');
-                                        var daySelect = document.getElementById('entry.816113830_day');
-                                        var date = new Date();
-                                        monthSelect.value = date.getMonth() + 1;
-                                        daySelect.value = date.getDate();
-                                    </script>
-                                </div>
                                 <input type="hidden" name="entry.816113830_year" id="entry.816113830_year"
                                        class="form-control"
                                        aria-label="Year" aria-required="true" value="2016">
@@ -454,13 +435,13 @@
                             </div>
                             <div class="form-group">
                                 <div class="col-xs-12">
-                                    <label for="entry_887147431" id="commentLabel">
+                                    <label for="entry_887147431">
                                         Комментарии
                                         <!--<span class="text-muted">comment</span>-->
                                     </label>
-                                    <textarea name="entry.887147431" rows="3" cols="0" class="form-control"
-                                              id="entry_887147431" dir="auto"
-                                              style="resize: vertical"></textarea>
+                                            <textarea name="entry.887147431" rows="3" cols="0" class="form-control"
+                                                      id="entry_887147431" dir="auto"
+                                                      style="resize: vertical"></textarea>
                                 </div>
                             </div>
                             <input name="draftResponse" value="[,,&quot;-5991128489788675120&quot;]" type="hidden">
@@ -479,12 +460,76 @@
                                 <br>
                             </div>
                         </form>
+                        <!--<form action="https://docs.google.com/forms/d/1iLCrtUr_JabXIQZuLi2_yuUaWjdPUiVgmSZgGJKoCg8/formResponse" target="_self"-->
+                        <!--method="POST" id="mG61Hd">-->
+                        <!--<input name="entry.404854143" jsname="L9xHkb" type="hidden">-->
+                        <!--<input name="entry.1592597741" jsname="L9xHkb" type="hidden">-->
+                        <!--<input name="entry.1013970766" jsname="L9xHkb" type="hidden">-->
+                        <!--<div class="form-group">-->
+                        <!--<input class="form-control" jsname="YPqjbf" autocomplete="off" tabindex="0" placeholder="Ваше имя"-->
+                        <!--aria-label="name" aria-describedby="i.desc.1929732273 i.err.1929732273"-->
+                        <!--name="innokids_test" value="" required="" dir="auto" data-initial-dir="auto" data-initial-value="" type="text">-->
+                        <!--</div>-->
+                        <!--<div class="form-group">-->
+                        <!--<input class="form-control" jsname="YPqjbf" autocomplete="off" placeholder="Имя ребенка"-->
+                        <!--tabindex="0" aria-label="kid_name" aria-describedby="i.desc.1064570060 i.err.1064570060"-->
+                        <!--name="innokids_test" value="" dir="auto" data-initial-dir="auto" data-initial-value="" type="text">-->
+                        <!--</div>-->
+                        <!--<div class="form-group">-->
+                        <!--<input class="form-control" jsname="YPqjbf" autocomplete="off" placeholder="Телефон"-->
+                        <!--tabindex="0" aria-label="phone" aria-describedby="i.desc.80589727 i.err.80589727"-->
+                        <!--name="innokids_test" value="" required="" dir="auto" data-initial-dir="auto" data-initial-value="" type="text">-->
+                        <!--</div>-->
+                        <!--&lt;!&ndash; <div class="input-group date"> &ndash;&gt;-->
+                        <!--&lt;!&ndash; <input type="text" class="form-control" placeholder="Когда вас ждать"> &ndash;&gt;-->
+                        <!--&lt;!&ndash; <span class="input-group-addon"><i class="fa fa-chevron-down"></i></span> &ndash;&gt;-->
+                        <!--&lt;!&ndash; </div> &ndash;&gt;-->
+                        <!--<input name="fvv" value="1" type="hidden">-->
+                        <!--<input name="draftResponse" value="[,,&quot;-4878413679605069917&quot;]-->
+                        <!--" type="hidden">-->
+                        <!--<input name="pageHistory" value="0" type="hidden">-->
+                        <!--<input name="fbzx" value="-4878413679605069917" type="hidden">-->
+                        <!--<button type="submit" class="btn btn-primary btn-block uppercase witharrow">Записаться</button>-->
+                        <!--</form>-->
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="successMessage alert alert-success" style="display: none">
+                                    <button type="button" class="close" data-dismiss="alert"
+                                            aria-hidden="true">&times;</button>
+                                    <p>Спасибо! Мы скоро с вами свяжемся!</p>
+                                </div>
+                                <div class="errorMessage alert alert-danger" style="display: none">
+                                    <button type="button" class="close" data-dismiss="alert"
+                                            aria-hidden="true">&times;</button>
+                                    <p>Ой! Возникла какая-то ошибка, попробуйте повторить позже.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="row">
+        <div class="col-md-12">
+            <div class="pull-right socials-bottom">
+                <h4 class="color-motive pull-left">Мы в соцсетях</h4>
+                <ul class="socials pull-right">
+                    <!-- <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a></li> -->
+                    <li><a href="https://vk.com/innokidsclub" data-toggle="tooltip" data-placement="bottom"
+                           title="Вконтакте"><i class="fa fa-vk"></i></a></li>
+                    <!-- <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Вконтакте"><i class="fa fa-twitter"></i></a></li> -->
+                    <!-- <li><a href="#" data-toggle="tooltip" data-placement="right" title="Tooltip on right"><i class="fa fa-google-plus"></i></a></li> -->
+                    <!-- <li><a href="#" data-toggle="tooltip" data-placement="top" title="Tooltip on top"><i class="fa fa-youtube"></i></a></li> -->
+                    <!-- <li><a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip on left"><i class="fa fa-flickr"></i></a></li> -->
+                    <!-- <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram"></i></a></li> -->
+                    <li><a href="https://telegram.me/innokids" data-toggle="tooltip" data-placement="bottom"
+                           title="Telegram"><i class="fa fa-paper-plane"></i></a></li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
     </div>
 </div>
 
@@ -537,27 +582,7 @@
 <footer class="type3">
     <div class="container">
         <div class="row">
-            <div class="col-md-5 col-sm-12">
-                <h4>&nbsp;</h4>
-                <div class="pull-right socials-bottom">
-                    <h4 class="color-motive pull-left">Мы в соцсетях</h4>
-                    <ul class="socials pull-right">
-                        <!-- <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a></li> -->
-                        <li><a href="https://vk.com/innokidsclub" data-toggle="tooltip" data-placement="bottom"
-                               title="Вконтакте"><i class="fa fa-vk"></i></a></li>
-                        <!-- <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Вконтакте"><i class="fa fa-twitter"></i></a></li> -->
-                        <!-- <li><a href="#" data-toggle="tooltip" data-placement="right" title="Tooltip on right"><i class="fa fa-google-plus"></i></a></li> -->
-                        <!-- <li><a href="#" data-toggle="tooltip" data-placement="top" title="Tooltip on top"><i class="fa fa-youtube"></i></a></li> -->
-                        <!-- <li><a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip on left"><i class="fa fa-flickr"></i></a></li> -->
-                        <!-- <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram"></i></a></li> -->
-                        <li><a href="https://telegram.me/innokids" data-toggle="tooltip" data-placement="bottom"
-                               title="Telegram"><i class="fa fa-paper-plane"></i></a></li>
-                    </ul>
-                    <div class="clearfix"></div>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-4 col-md-offset-5 col-sm-6">
                 <h4>Контакты</h4>
                 <div class="contacts">
                     г. Иннополис <br>
