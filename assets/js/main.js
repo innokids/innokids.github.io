@@ -259,13 +259,4 @@ jQuery(document).ready(function() {
         $image.stop().animate({ marginTop: '0'}, 300);
     });
 
-    jQuery(".click1").click(function(){
-        window.open("http://daycare.html.themeplayers.net/default/");
-    });
-    jQuery(".click2").click(function(){
-        window.open("http://daycare.html.themeplayers.net/grass/");
-    });
-    jQuery(".click3").click(function(){
-        window.open("http://daycare.html.themeplayers.net/desert/");
-    });
 });

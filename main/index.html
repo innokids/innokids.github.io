@@ -304,26 +304,178 @@
                 <div class="col-sm-6 col-md-12">
                     <div class="shadow-box daycare-widget">
                         <h4 class="color-motive uppercase">Запись на занятие</h4>
-                        <form role="form" action="" method="post" class="contactForm validateIt"
-                              data-email-subject="Contact Form" data-show-errors="true">
+                        <script type="text/javascript">
+                            var submitted=false;
+                            var disableSubmit = function () {
+                                submitted=true;
+                                document.getElementById("submitButton").disabled = true;
+                            };
+                            var showSubmitMessage = function () {
+                                document.getElementById("submitMessage").style.display = "block";
+                            };
+                        </script>
+                        <iframe name="hidden_iframe" id="hidden_iframe"
+                                style="display:none;" onload="if (submitted) {showSubmitMessage();}"></iframe>
+                        <form action="https://docs.google.com/forms/d/1r0vPcnrq2GYkXAU2l7RwaoQCWvRjn7VkLhCydGhjX7g/formResponse" method="post"
+                              target="hidden_iframe" onsubmit="disableSubmit()" class="form-horizontal">
                             <div class="form-group">
-                                <input required type="text" name="field[]" class="form-control"
-                                       placeholder="Ваше имя">
+                                <div class="col-xs-12">
+                                    <label for="entry_1414493108">
+                                        Ваше ФИО и ребенка (детей)
+                                        <!--<br>-->
+                                        <!--<span class="text-muted">Your name and child`s name</span>-->
+                                    </label>
+                                    <input name="entry.1414493108" value="" class="form-control required"
+                                           id="entry_1414493108" dir="auto"
+                                           aria-label="Ваше ФИО и ребенка (детей) | Your name and child`s name  "
+                                           aria-required="true" required="" title="" type="text">
+                                </div>
                             </div>
                             <div class="form-group">
-                                <input required type="text" name="field[]" class="form-control"
-                                       placeholder="Имя ребенка">
+                                <div class="col-xs-12">
+                                    <label for="entry_1623053317">
+                                        Телефон
+                                        <!--<span class="text-muted">(phone)</span>-->
+                                    </label>
+                                    <input name="entry.1623053317" value="" class="form-control"
+                                           id="entry_1623053317" dir="auto" aria-label="телефон | tel.  "
+                                           aria-required="true" required="" title="" type="text">
+                                </div>
                             </div>
                             <div class="form-group">
-                                <input required type="text" name="field[]" class="form-control"
-                                       placeholder="Телефон">
+                                <div class="col-xs-12">
+                                    <label for="entry_816113830">
+                                        Когда вас ждать?
+                                        <!--<span class="text-muted">When will you visit club?</span>-->
+                                    </label>
+                                </div>
+                                <div class="col-xs-8">
+                                    <select name="entry.816113830_month" class="form-control"
+                                            id="entry.816113830_month" aria-label="Month"
+                                            aria-required="true">
+                                        <option value="">Month</option>
+                                        <option value="1">January</option>
+                                        <option value="2">February</option>
+                                        <option value="3">March</option>
+                                        <option value="4">April</option>
+                                        <option value="5">May</option>
+                                        <option value="6">June</option>
+                                        <option value="7">July</option>
+                                        <option value="8">August</option>
+                                        <option value="9">September</option>
+                                        <option value="10">October</option>
+                                        <option value="11">November</option>
+                                        <option value="12">December</option>
+                                    </select>
+                                </div>
+                                <div class="col-xs-4">
+                                    <select name="entry.816113830_day" class="form-control"
+                                            id="entry.816113830_day" aria-label="Day of month"
+                                            aria-required="true">
+                                        <option value="">Day</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                    </select>
+                                </div>
+                                <input type="hidden" name="entry.816113830_year" id="entry.816113830_year"
+                                       class="form-control"
+                                       aria-label="Year" aria-required="true" value="2016">
+                                <input type="hidden" value="10"
+                                       name="entry.816113830_hour" id="entry.816113830_hour"
+                                       aria-label="Hour" aria-required="true">
+                                <input name="entry.816113830_minute" type="hidden" value="00"
+                                       id="entry.816113830_minute" aria-label="Minute"
+                                       aria-required="true">
+
+                                <input type="hidden" name="entry.816113830_ampm" value="AM" aria-label="AM or PM">
                             </div>
-                            <div class="input-group date">
-                                <input type="text" class="form-control" placeholder="Когда вас ждать">
-                                <span class="input-group-addon"><i class="fa fa-chevron-down"></i></span>
+                            <div class="form-group">
+                                <div class="col-xs-12">
+                                    <label for="entry_887147431">
+                                        Комментарии
+                                        <!--<span class="text-muted">comment</span>-->
+                                    </label>
+                                            <textarea name="entry.887147431" rows="3" cols="0" class="form-control"
+                                                      id="entry_887147431" dir="auto"
+                                                      style="resize: vertical"></textarea>
+                                </div>
                             </div>
-                            <button type="submit" class="btn btn-primary btn-block uppercase witharrow">Записаться</button>
+                            <input name="draftResponse" value="[,,&quot;-5991128489788675120&quot;]" type="hidden">
+                            <input name="pageHistory" value="0" type="hidden">
+                            <input name="fbzx" value="-5991128489788675120" type="hidden">
+
+                            <button type="submit" name="submit" id="submitButton"
+                                    class="btn btn-primary btn-block uppercase witharrow">Записаться
+                            </button>
+                            <div id="submitMessage" style="display: none;">
+                                <br>
+                                <h4 class="text-success">
+                                    Запись добавлена!
+                                </h4>
+                                 Мы в скоро с вами свяжемся
+                                <br>
+                            </div>
                         </form>
+                        <!--<form action="https://docs.google.com/forms/d/1iLCrtUr_JabXIQZuLi2_yuUaWjdPUiVgmSZgGJKoCg8/formResponse" target="_self"-->
+                              <!--method="POST" id="mG61Hd">-->
+                            <!--<input name="entry.404854143" jsname="L9xHkb" type="hidden">-->
+                            <!--<input name="entry.1592597741" jsname="L9xHkb" type="hidden">-->
+                            <!--<input name="entry.1013970766" jsname="L9xHkb" type="hidden">-->
+                            <!--<div class="form-group">-->
+                                <!--<input class="form-control" jsname="YPqjbf" autocomplete="off" tabindex="0" placeholder="Ваше имя"-->
+                                       <!--aria-label="name" aria-describedby="i.desc.1929732273 i.err.1929732273"-->
+                                       <!--name="innokids_test" value="" required="" dir="auto" data-initial-dir="auto" data-initial-value="" type="text">-->
+                            <!--</div>-->
+                            <!--<div class="form-group">-->
+                                <!--<input class="form-control" jsname="YPqjbf" autocomplete="off" placeholder="Имя ребенка"-->
+                                       <!--tabindex="0" aria-label="kid_name" aria-describedby="i.desc.1064570060 i.err.1064570060"-->
+                                       <!--name="innokids_test" value="" dir="auto" data-initial-dir="auto" data-initial-value="" type="text">-->
+                            <!--</div>-->
+                            <!--<div class="form-group">-->
+                                <!--<input class="form-control" jsname="YPqjbf" autocomplete="off" placeholder="Телефон"-->
+                                       <!--tabindex="0" aria-label="phone" aria-describedby="i.desc.80589727 i.err.80589727"-->
+                                       <!--name="innokids_test" value="" required="" dir="auto" data-initial-dir="auto" data-initial-value="" type="text">-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; <div class="input-group date"> &ndash;&gt;-->
+                            <!--&lt;!&ndash; <input type="text" class="form-control" placeholder="Когда вас ждать"> &ndash;&gt;-->
+                            <!--&lt;!&ndash; <span class="input-group-addon"><i class="fa fa-chevron-down"></i></span> &ndash;&gt;-->
+                            <!--&lt;!&ndash; </div> &ndash;&gt;-->
+                            <!--<input name="fvv" value="1" type="hidden">-->
+                            <!--<input name="draftResponse" value="[,,&quot;-4878413679605069917&quot;]-->
+                                                               <!--" type="hidden">-->
+                            <!--<input name="pageHistory" value="0" type="hidden">-->
+                            <!--<input name="fbzx" value="-4878413679605069917" type="hidden">-->
+                            <!--<button type="submit" class="btn btn-primary btn-block uppercase witharrow">Записаться</button>-->
+                        <!--</form>-->
                         <div class="row">
                             <div class="col-xs-12">
                                 <div class="successMessage alert alert-success" style="display: none">
@@ -420,7 +572,7 @@
                     ул. Спортивная
                     д. 104 кв. 3
                     <span class="contacts-map">
-                        <a target="_blank" href="https://yandex.ru/maps/-/CVTGjSoQ"><i class="fa fa-map-marker"></i><br>MAP</a>
+                        <a target="_blank" href="https://yandex.ru/maps/-/CVTGjSoQ"><i class="fa fa-map-marker"></i><br>Карта</a>
                     </span>
                 </div>
             </div>
@@ -463,9 +615,9 @@
 
 <script src="assets/js/jquery.flexslider-min.js"></script>
 
-<script src="assets/js/fullcalendar.min.js"></script>
+<!-- <script src="assets/js/fullcalendar.min.js"></script> -->
 <!-- <script src="assets/js/gcal.js"></script> -->
-<script src="assets/js/jquery-ui.custom.min.js"></script>
+<!-- <script src="assets/js/jquery-ui.custom.min.js"></script> -->
 
 <script src="assets/js/jquery.browser.min.js"></script>
 
