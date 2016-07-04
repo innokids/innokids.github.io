@@ -692,6 +692,13 @@ ol {
   margin-top: 0;
   margin-bottom: 10px;
 }
+ul.h6 {
+  padding-left: 1em;
+  list-style: none;
+}
+ul.h6 > li {
+  margin-bottom: 0.7em;
+}
 ul ul,
 ol ul,
 ul ol,
@@ -7036,6 +7043,9 @@ h5,
 .uppercase {
   text-transform: uppercase;
 }
+.lowercase {
+  text-transform: lowercase;
+}
 .little {
   font-size: 10px;
   font-family: arial, sans-serif;
@@ -7261,6 +7271,7 @@ img.pull-left {
 .pageobject {
   position: absolute;
 }
+.shadow-box-title,
 .shadow-box {
   -webkit-box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
@@ -7268,10 +7279,21 @@ img.pull-left {
   background-color: rgba(255, 255, 255, 0.9);
   padding: 10px 20px 150px 50px;
   width: 100%;
-  margin-bottom: 20px;
+}
+.shadow-box-title {
+  margin-bottom: 10px;
+}
+.shadow-box {
+  margin-bottom: 40px;
+}
+.shadow-box-title.padding-none {
+  padding: 10px 20px;
+}
+.shadow-box.padding-none {
+  padding: 10px;
 }
 .shadow-box.padding-small {
-  padding: 10px 20px 40px 50px;
+  padding: 20px;
 }
 .shadow-box.padding-normal {
   padding: 20px 25px;

@@ -22,6 +22,11 @@
     <script src="./assets/bootstrap/js/html5shiv.js"></script>
     <script src="./assets/bootstrap/js/respond.min.js"></script>
     <![endif]-->
+    <script type="text/javascript">
+        function scrollPlease(element) {
+
+        }
+    </script>
 </head>
 
 <body class="withAnimation">
@@ -66,14 +71,12 @@
                     <img class="navbar-brand__logo" src="assets/images/logo.svg" alt="Innokids">
                 </a>
             </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active"><a href="index.html">Направления</a></li>
                     <li><a href="https://docs.google.com/spreadsheets/d/1tPfb5q_TINDL8GtPv4-DERIcYDAT-CHQI2xw4WnLVnU"
                            target="_blank">Расписание</a></li>
-                    <li><a href="index.html">Запись на занятие</a></li>
+                    <li><a href="#appointments" onclick="document.getElementById('appointments'))">Запись на занятие</a></li>
                     <li><a href="index.html">Контакты</a></li>
                     <li><a href="index.html">Цены</a></li>
                     <li><a href="index.html">Отзывы</a></li>
@@ -149,104 +152,119 @@
 <div class="container">
     <div class="row">
         <div class="col-md-9">
-            <div class="shadow-box padding-small">
+            <div class="shadow-box-title padding-none">
                 <h4 class="color-motive uppercase">Наши направления</h4>
-                <hr>
+            </div>
+
+            <div class="shadow-box padding-small">
+                <div class="clearfix">
+                    <h4 class="color-motive uppercase">
+                        Группа развития
+                        <small class="lowercase">(0-18 месяцев)</small>
+                    </h4>
+                </div>
                 <div class="row">
-                    <div class="col-md-3 col-sm-4 text-center">
+                    <div class="col-sm-3">
                         <br>
-                        <img src="assets/images/infant.png" alt="Infant">
+                        <img src="assets/images/infant.png" alt="Infant" class="img-responsive">
                     </div>
-                    <div class="col-md-9 col-sm-8">
-                        <h4>Группа развития (0-18 месяцев)</h4>
-                        <p>
+                    <div class="col-sm-9">
+                        <p class="lead">
                             Методики, применяемые на занятиях группы развития:
-                        <ul>
-                            <li>«Музыка с мамой» (Музыкальная методика Железновых)</li>
-                            <li>«Говорим с пеленок» (Методика Г. Домана)</li>
-                            <li>Кубики Зайцева</li>
-                            <li>Игры с логическими блоками Дьенаша</li>
-                            <li>Творчество от «Галки-Игралки»</li>
-                            <li>Физкультминутки</li>
-                            <li>И многое другое</li>
-                        </ul>
                         </p>
+                            <ul>
+                                <li>«Музыка с мамой» (Музыкальная методика Железновых)</li>
+                                <li>«Говорим с пеленок» (Методика Г. Домана)</li>
+                                <li>Кубики Зайцева</li>
+                                <li>Игры с логическими блоками Дьенаша</li>
+                                <li>Творчество от «Галки-Игралки»</li>
+                                <li>Физкультминутки</li>
+                                <li>И многое другое</li>
+                            </ul>
                         <p>
                             Занятие длится около 40 минут.
                         </p>
-                        <p>
+                        <p class="lead">
                             Примерный план занятия:
-                        <ul>
-                            <li>Приветствие</li>
-                            <li>Знакомство с окружающим миром</li>
-                            <li>Музыка</li>
-                            <li>Мелкая моторика рук, пальчиковая гимнастика или потешки</li>
-                            <li>Развитие внимания/памяти/мышления</li>
-                            <li>Опыт, эксперимент или упражнение baby-sensory</li>
-                            <li>Общая моторика и координация движений (физкультминутка)</li>
-                            <li>Творчество</li>
-                            <li>Прощание</li>
-                        </ul>
                         </p>
+                            <ul>
+                                <li>Приветствие</li>
+                                <li>Знакомство с окружающим миром</li>
+                                <li>Музыка</li>
+                                <li>Мелкая моторика рук, пальчиковая гимнастика или потешки</li>
+                                <li>Развитие внимания/памяти/мышления</li>
+                                <li>Опыт, эксперимент или упражнение baby-sensory</li>
+                                <li>Общая моторика и координация движений (физкультминутка)</li>
+                                <li>Творчество</li>
+                                <li>Прощание</li>
+                            </ul>
                     </div>
                 </div>
-                <hr>
+            </div>
+
+            <div class="shadow-box-title padding-none">
                 <div class="row">
                     <div class="col-md-3 col-sm-4 text-center">
-                        <br>
-                        <img src="assets/images/toddler.png" alt="Toddler">
+                        <h4 class="color-motive uppercase">
+                            Школа искусств
+                            <small class="lowercase">
+                                Продолжительность <br> 1 ак. час
+                            </small>
+                        </h4>
+                        <!-- <br> -->
+                        <!-- <img src="assets/images/toddler.png" alt="Toddler"> -->
                     </div>
                     <div class="col-md-9 col-sm-8">
-                        <h4><a href="#">Школа искусств</a></h4>
-                        <!-- <h6>Posted on July 15, 2011 by <a href="#" class="color-motive-light">admin</a></h6> -->
-                        <p>
-                            Направления «Школы искусств»:
-                        <ul>
-                            <li>Уроки музыки (для детей 3-6 лет)</li>
-                            <li>Танцевальные занятия (для детей 5-9 лет)</li>
-                            <li>ИЗО (для детей 3-6 лет)</li>
-                            <li>Шахматы (от 5 лет)</li>
-                            <li>Йога (от 4 лет)</li>
+                    <br>
+                        <ul class="list-group">
+                            <li class="list-group-item">Уроки музыки (для детей 3-6 лет)</li>
+                            <li class="list-group-item">Танцевальные занятия (для детей 5-9 лет)</li>
+                            <li class="list-group-item">ИЗО (для детей 3-6 лет)</li>
+                            <li class="list-group-item">Шахматы (от 5 лет)</li>
+                            <li class="list-group-item">Йога (от 4 лет)</li>
                         </ul>
-                        Продолжительность – 1 ак. час
-                        </p>
                     </div>
                 </div>
-                <hr>
+            </div>
+            <div class="shadow-box padding-small">
                 <div class="row">
                     <div class="col-md-3 col-sm-4 text-center">
                         <br>
                         <img src="assets/images/preschool.png" alt="Preschool">
                     </div>
                     <div class="col-md-9 col-sm-8">
-                        <h4>Уроки музыки для детей в возрасте 3-6 лет</h4>
+                        <h4 class="color-motive uppercase">
+                            Уроки музыки
+                            <small class="lowercase">для детей в возрасте 3-6 лет</small>
+                        </h4>
                         <p>
                             Проходят в игровой форме, в них включены:
                         <ul>
                             <li>Музыкальные и творческие игры (развитие слуха, голоса, чувства ритма)</li>
                             <li>Упражнения для мелкой моторики (пальчиковые игры)</li>
-                            <li>Музицирование (шумовые музыкальные инструменты, синтезатор, баян)</li>
+                            <li>Музицирование (шумовые музыкальные инструменты, синтезатор)</li>
                             <li>Основы музыкальной грамоты в игровой форме</li>
                             <li>Прослушивание классической музыки</li>
                             <li>Пение</li>
                         </ul>
-                        <h5>
+<!--                         <h5>
                             Кто ведет
                         </h5>
                         Елена Сергеевна Павлова ­ выпускница Дальневосточной государственной академии искусств, лауреат
                         международных конкурсов, приглашенный преподаватель Пекинской школы искусств, музыкальный
                         руководитель в Монтессори-центре.
-                        </p>
+ -->                        </p>
                     </div>
                 </div>
-                <hr>
+            </div>
+            <div class="shadow-box padding-small">
                 <div class="row">
                     <div class="col-md-3 col-sm-4 text-center">
                         <br>
                         <img src="assets/images/summercamp.png" alt="Summer Camp">
                     </div>
                     <div class="col-md-9 col-sm-8">
-                        <h4>Танцы</h4>
+                        <h4 class="color-motive uppercase">Танцы</h4>
                         <p>
                             Из чего состоит занятие:
                         <ul>
@@ -263,14 +281,15 @@
                         </p>
                     </div>
                 </div>
-                <hr>
+            </div>
+            <div class="shadow-box padding-small">
                 <div class="row">
                     <div class="col-md-3 col-sm-4 text-center">
                         <br>
                         <img src="assets/images/holidaycamp.png" alt="Holiday Camp">
                     </div>
                     <div class="col-md-9 col-sm-8">
-                        <h4>Мама-Клуб</h4>
+                        <h4 class="color-motive uppercase">Мама-Клуб</h4>
                         <p>
                             Занятия мама-клуба – это встречи, на которых каждая мама может стать организатором и
                             поделиться своими знаниями.
@@ -288,6 +307,7 @@
                 </div>
             </div>
         </div>
+
         <div class="col-md-3">
             <div class="row">
                 <div class="col-sm-6 col-md-12">
@@ -326,9 +346,8 @@
                         </table>
                     </div>
                 </div>
-            </div>
-            <div class="row">
                 <div class="col-sm-6 col-md-12">
+                    <div id="appointments" style="top: -7em; position: relative;"></div>
                     <div class="shadow-box daycare-widget">
                         <h4 class="color-motive uppercase">Запись на занятие</h4>
                         <script type="text/javascript">
