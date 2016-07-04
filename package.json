@@ -18,5 +18,8 @@
   "homepage": "https://github.com/innokids/innokids.github.io#readme",
   "devDependencies": {
     "http-server": "^0.9.0"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.6"
   }
 }
