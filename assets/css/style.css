@@ -9575,7 +9575,12 @@ img.fit-image {
   .navbar-default .navbar-toggle:focus {
     background-color: #ffffff;
   }
-  .navbar-default .navbar-collapse {
+/*  .navbar-collapse {
+    width: 100%;
+    position: absolute;
+    background: rgba(255,255,255,0.8);
+  }
+*/  .navbar-default .navbar-collapse {
     border: none;
   }
   .navbar li.dropdown > .dropdown-menu > li.dropdown-submenu:after {
